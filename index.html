@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación</title>
+    <link rel="preload" href="css/style.css" as="style">
+    <link href=" css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <div id="cabezal" class="clearfix">
+            <img id="logo" src="https://cdn-icons-png.flaticon.com/128/4388/4388289.png" alt="logo">
+            <ul id="navPrincipal">
+                <li>
+                    <a>Inicio</a>
+                </li>
+                <li>
+                    <a>Información</a>
+                </li>
+                <li>
+                    <a>Reservas</a>
+                </li>
+                <li>
+                    <a>Contacto</a>
+                </li>
+            </ul>
+            <div id="aux">
+                <a>Registrarse</a> | <a>Iniciar Sesión</a> | <a>Cerrar Sesión</a>
+
+
+            </div>
+        </div>
+        <div id="contenido">
+            <br>
+            <div id="registrarse">
+                <label for="txtRegistroNombre">Nombre:</label>
+                <input type="text" id="txtRegistroNombre">
+                <label for="txtRegistroPass">Contraseña de minimo 6 carácteres, mayusculas, minusculas y números</label>
+                <input type="text" id="txtRegistroPass">
+            </div>
+
+            <div id="iniciarSesion">
+                <label for="txtNombreUsuario">Nombre de usuario:</label>
+                <input type="text" id="txtNombreUsuario"><br>
+                <label for="txtPassUsuario">Contraseña:</label>
+                <input type="text" id="txtPassUsuario"><br>
+            </div>
+            <br>
+            <h3>Buscar reservas</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="10" cy="10" r="7" />
+                    <line x1="21" y1="21" x2="15" y2="15" />
+                </svg>
+            <input type="text" id="reservasBusca">
+            <br>
+            <br>
+            <table border=1>
+                <thead>
+                    <tr>
+                        <th>Local</th>
+                        <th>Nombre de usuario</th>
+                        <th>Estado de la reserva</th>
+                    </tr>
+                </thead>
+                <tbody id="tblReservas">
+                </tbody>
+            </table>
+            <hr>
+            <div class="interior">
+                <div>
+                    <h2>Teatros</h2>
+                    <img src="img/imgT1.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <input type="button" value="Ver Teatros" id="btnTeatros">
+                </div>
+                <div id="Teatros">
+                    <img src="img/imgT2.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <p>Mostrar datos característicos</p>
+                    <p id="disponibilidadT">LOCAL DISPONIBLE</p>
+                </div>
+                <hr>
+                <div>
+                    <h2>Museos</h2>
+                    <img src="img/imgM1.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <input type="button" value="Ver Museos" id="btnMuseos">
+                    <p id="disponibilidadM">LOCAL DISPONIBLE</p>
+                </div>
+                <div id="Museos">
+                    <img src="img/imgM2.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <p>Mostrar datos característicos</p>
+                    <p id="disponibilidadM2">LOCAL DISPONIBLE</p>
+                </div>
+                <hr>
+                <div>
+                    <h2>Restaurantes</h2>
+                    <img src="img/imgR1.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <input type="button" value="Ver Restaurantes" id="btnRestaurantes">
+                    <p id="disponibilidadR1">LOCAL DISPONIBLE</p>
+                </div>
+                <div id="Restaurantes">
+                    <img src="img/imgR2.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <p>Mostrar datos característicos</p>
+                    <p id="disponibilidadR2">LOCAL DISPONIBLE</p>
+                </div>
+                <div id="Restaurantes2">
+                    <img src="img/imgR3.jpg">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis, dignissim augue.</p>
+                    <p>Mostrar datos característicos</p>
+                    <p id="disponibilidadR3">LOCAL DISPONIBLE</p>
+                    <div id="sesionIniciada">
+                        <input type="button" value="Reservar" id="reservaR3">
+                        <div id="reserva">
+                            <label for="cantReservas">¿Cuántos lugares desea reservar?</label>
+                            <input type="number" id="cantReservas">
+                            <input type="button" value="Confirmar Reserva">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3>Dejar una valoración</h3>
+                <label for="txtPrueba2 ">Valoración:</label>
+                <select name="puntos" id="txtPrueba2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="button" value="Enviar" id="btnPuntaje"><br>
+            </div>
+        </div>
+        <div id="pie">
+            <h3>Contenido generado by Roberto y Bruno </h3>
+        </div>
+    </div>
+
+    <script src="js/codigo.js"></script>
+    <script src="js/librery.js"></script>
+</body>
+
+</html>
